@@ -1,7 +1,10 @@
 window.addEventListener('DOMContentLoaded', function (){
     'use strict';
 
-    let tab,info,tabContent;
+    let tab,
+        info,
+        tabContent;
+
     function createVariable(tabs, inf, tabContents){
         tab = document.querySelectorAll('.' + tabs + '');
         info = document.querySelector('.' + inf + '');
@@ -10,7 +13,7 @@ window.addEventListener('DOMContentLoaded', function (){
     }
     
     createVariable('info-header-tab','info-header','info-tabcontent');
-    console.log(tab);
+    
         
        
     function hideTabContent(a) {
